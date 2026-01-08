@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#cd /
+#sudo chmod +x home
+#cd home
+#sudo chmod +x ubuntu
+#cd /home/ubuntu
+#
+#sudo chmod -R 777 nurebo-api
+##sudo chmod +x socketio-server
+##cd /home/ubuntu/socketio-server
+##sudo chmod +x socketio-redis
+##sudo chmod +x mysql-express
+#
+#sudo apt-add-repository ppa:redislabs/redis
+#echo -ne '\n'
+#
+#sudo apt update -y
+#sudo apt upgrade -y
+#
+#curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+#sudo apt install -y nodejs
+#
+#sudo apt install zip unzip
+#
+#sudo apt install nginx -y
+#
+#sudo apt-get install redis-server -y
+#
+#sudo npm i pm2 -g

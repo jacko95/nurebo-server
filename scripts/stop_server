@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#sudo su root
+
+cd /home/ubuntu/nurebo-api
+sudo rm -rf node_modules
+sudo npm cache clean --force
+sudo pm2 delete api
+
+cd /home/ubuntu/nurebo-app
+sudo rm -rf .next
+sudo rm -rf node_modules
+sudo npm cache clean --force
+sudo pm2 delete app
+
+sudo pm2 save -f
+
+sudo systemctl stop nginx
+
+#sudo su ubuntu

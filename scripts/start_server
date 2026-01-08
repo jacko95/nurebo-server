@@ -1,0 +1,111 @@
+#!/bin/bash
+
+sudo service redis-server start
+
+#cd /var/www/html
+cd /home/ubuntu/nurebo-api
+
+sudo npm i
+#sudo npm i uuid nodemon mysql http socket.io morgan cors express morgan dotenv esm @socket.io/redis-adapter ioredis redis socket.io-redis axios process
+#sudo npm i @socket.io/redis-adapter@7.2.0 \
+#aws-sdk@2.1159.0 \
+#axios@0.27.2 \
+#base64url@3.0.1 \
+#body-parser@1.20.0 \
+#cors@2.8.5 \
+#dotenv@16.0.1 \
+#express@4.18.1 \
+#express-rate-limit@6.4.0 \
+#ioredis@5.0.6 \
+#jsonwebtoken@8.5.1 \
+#morgan@1.10.0 \
+#multer@1.4.5-lts.1 \
+#mysql@2.18.1 \
+#node-schedule@2.1.0 \
+#nodemailer@6.7.5 \
+#nodemon@2.0.16 \
+#qrcode@1.5.0 \
+#socket.io@4.5.1 \
+#socket.io-redis@6.1.1 \
+#uuid@8.3.2
+
+#sudo npm audit fix --force
+
+cd /etc/nginx/sites-available
+
+sudo bash -c 'echo "server {
+        listen 80;
+        listen [::]:80;
+
+        root /home/ubuntu/nurebo-api;
+        # root /home/ubuntu;
+        # root /var/www/html;
+
+        index index.js;
+
+        server_name api.nurebo.com;
+
+        location / {
+            proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+            proxy_set_header Host \$host;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade \$http_upgrade;
+            proxy_set_header Connection upgrade;
+            proxy_cache_bypass \$http_upgrade;
+
+            proxy_pass http://localhost:5000;
+        }
+}" > api.nurebo.com'
+
+sudo ln -s /etc/nginx/sites-available/api.nurebo.com /etc/nginx/sites-enabled/
+sudo systemctl restart nginx
+
+#cd /var/www/html
+
+cd /home/ubuntu/nurebo-api
+sudo pm2 start ./index.js --name api --time
+
+sudo bash -c 'OUTPUT=$(pm2 startup)
+echo "${OUTPUT}"'
+sudo pm2 save -f
+#sudo pm2 logs 0
+
+
+cd /etc/nginx/sites-available
+sudo bash -c 'echo "server {
+        listen 80;
+        listen [::]:80;
+
+        root /home/ubuntu/nurebo-app;
+        # root /home/ubuntu;
+        # root /var/www/html;
+
+        # index index.js;
+
+        server_name www.nurebo.com;
+
+        location / {
+            proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+            proxy_set_header Host \$host;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade \$http_upgrade;
+            proxy_set_header Connection upgrade;
+            proxy_cache_bypass \$http_upgrade;
+
+            proxy_pass http://localhost:3000;
+        }
+}" > www.nurebo.com'
+sudo ln -s /etc/nginx/sites-available/www.nurebo.com /etc/nginx/sites-enabled/
+
+cd /home/ubuntu/nurebo-app
+sudo npm i
+sudo npm run build
+
+sudo pm2 start npm --name app --time -- start
+sudo bash -c 'OUTPUT=$(pm2 startup)
+echo "${OUTPUT}"'
+sudo pm2 save -f
+#sudo pm2 logs 0
+
+sudo systemctl restart nginx
+
