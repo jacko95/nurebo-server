@@ -13,10 +13,14 @@ var session = require('express-session')
 const multer = require('multer');
 var upload = multer();
 const router = express.Router();
-//LOCAL
-require('dotenv').config({ path: './src/nurebo-api/.env' });
+// //LOCAL
+// require('dotenv').config({ path: './src/nurebo-api/.env' });
 // REMOTE
 // require('dotenv').config();
+const path = require('path');
+require('dotenv').config({
+    path: path.resolve(__dirname, '.env')
+});
 
 process.env.AWS_SDK_JS_SUPPRESS_MAINTENANCE_MODE_MESSAGE = '1';
 process.env.TZ = 'UTC';
