@@ -243,7 +243,7 @@ const sessionMiddleware = session({
     resave: false,
     saveUninitialized: false,
     cookie: {
-        // secure: true, //REMOTE
+        secure: true, //REMOTE
         // maxAge: 60000 * 60 * 40,
     },
 
