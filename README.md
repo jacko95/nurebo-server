@@ -57,14 +57,14 @@ Il file `appspec.yml` copia entrambe le cartelle sul server durante il deploy.
 - Tailwind CSS
 
 ## 📸 Screenshot — nurebo-app (Web)
-<div style="text-align: center; background-color: #f5f5f5; padding: 16px; border-radius: 8px;">
+<div align="center" style="text-align: center; background-color: #f5f5f5; padding: 16px; border-radius: 8px;">
 <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/ristorante1.png" alt="Nurebo Web Dashboard" width="300"/>  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/ristorante6.png" alt="Nurebo Web Dashboard" width="300"/>
   <br/>
   <em>Ristorante</em>
 </div>
 <br/>
 
-<div style="text-align: center; background-color: #f5f5f5; padding: 16px; border-radius: 8px;">
+<div align="center" style="text-align: center; background-color: #f5f5f5; padding: 16px; border-radius: 8px;">
   <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/reservation1.png" alt="Nurebo Web Services" width="300"/>
   <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/reservation2.png" alt="Nurebo Web Services" width="300"/>
   <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/reservation6.png" alt="Nurebo Web Services" width="300"/>
@@ -74,7 +74,7 @@ Il file `appspec.yml` copia entrambe le cartelle sul server durante il deploy.
 </div>
 <br/>
 
-<div style="text-align: center; background-color: #f5f5f5; padding: 16px; border-radius: 8px;">
+<div align="center" style="text-align: center; background-color: #f5f5f5; padding: 16px; border-radius: 8px;">
   <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/store6.png" alt="Nurebo Web Map" width="300"/>
   <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/store1.png" alt="Nurebo Web Map" width="300"/>
   <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/store2.png" alt="Nurebo Web Map" width="300"/>
