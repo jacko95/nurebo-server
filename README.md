@@ -59,27 +59,27 @@ Il file `appspec.yml` copia entrambe le cartelle sul server durante il deploy.
 ## 📸 Screenshot — nurebo-app (Web)
 
 <div align="center">
-  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/ristorante1.png" alt="Nurebo Web Dashboard" width="200"/>  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/ristorante6.png" alt="Nurebo Web Dashboard" width="200"/>
+  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/ristorante1.png" alt="Nurebo Web Dashboard" width="400"/>  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/ristorante6.png" alt="Nurebo Web Dashboard" width="400"/>
   <br/>
   <em>Ristorante</em>
 </div>
 <br/>
 
 <div align="center">
-  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/reservation1.png" alt="Nurebo Web Services" width="200"/>
-  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/reservation2.png" alt="Nurebo Web Services" width="200"/>
-  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/reservation6.png" alt="Nurebo Web Services" width="200"/>
-  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/reservation3.png" alt="Nurebo Web Services" width="200"/>
+  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/reservation1.png" alt="Nurebo Web Services" width="400"/>
+  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/reservation2.png" alt="Nurebo Web Services" width="400"/>
+  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/reservation6.png" alt="Nurebo Web Services" width="400"/>
+  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/reservation3.png" alt="Nurebo Web Services" width="400"/>
   <br/>
   <em>Prenotazione</em>
 </div>
 <br/>
 
 <div align="center">
-  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/store6.png" alt="Nurebo Web Map" width="200"/>
-  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/store1.png" alt="Nurebo Web Map" width="200"/>
-  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/store2.png" alt="Nurebo Web Map" width="200"/>
-  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/store3.png" alt="Nurebo Web Map" width="200"/>
+  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/store6.png" alt="Nurebo Web Map" width="400"/>
+  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/store1.png" alt="Nurebo Web Map" width="400"/>
+  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/store2.png" alt="Nurebo Web Map" width="400"/>
+  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/store3.png" alt="Nurebo Web Map" width="400"/>
   <br/>
   <em>Store</em>
 </div>
@@ -87,7 +87,7 @@ Il file `appspec.yml` copia entrambe le cartelle sul server durante il deploy.
 ## 🏗 Architettura
 
 <div align="center">
-  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/architettura1.jpg" alt="Nurebo Server Architecture" width="400"/>
+  <img src="https://nurebo-public.s3.eu-central-1.amazonaws.com/images/architettura1.jpg" alt="Nurebo Server Architecture" width="800"/>
 </div>
 
 ## 🛠 Tech Stack
